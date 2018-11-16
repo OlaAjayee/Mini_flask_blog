@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div id="wrapper">
+
+    <div class="form_div">
+    <p class="form_label">SIGN IN</p>
+    <form method="post">
+    <p><input type="text" placeholder="Username" value = "{{request.form.username }}" name="username" required></p>
+    <p><input type="password" placeholder="**********" name="password" required></p>
+    <p><input type="submit" value="SIGN IN"></p>
+    </form>
+    </div>
+
+    </div>
+{% endblock %}
